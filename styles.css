@@ -1,0 +1,339 @@
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+}
+h1{
+  color: white;
+  display: inline;
+  position: relative;
+  bottom: 50px;
+}
+.one{
+  color: white;
+  position: relative;
+  top: 700px;
+  display: inline;
+  left: 300px;
+}
+.two{
+  color: white;
+  position: relative;
+  top: 700px;
+  display: inline;
+  left: 1200px;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  display: inline;
+}
+.signup{
+  display: inline;
+  color: white;
+  position: relative;
+  bottom: 50px;
+  left: 1000px;
+}
+.login{
+  display: inline;
+  color: white;
+  position: relative;
+  bottom: 50px;
+  left: 1100px;
+}
+/*******8 end of top bar if needed add search button***********/
+
+.principal{
+  position: absolute;
+  width: 100%;
+  height: 75%;
+}
+.central{
+  position: absolute;
+  width: 100%;
+  height: 440px;
+  top: 20%;
+}
+.modal{
+  position: relative;
+  left: 400px;
+  width: 300px;
+  height: 400px;
+  transition: all 0.5s;
+  transition-delay: 0.7s;
+}
+.photo{
+    position: relative;
+    width: 300px;
+    height: 440px;
+    overflow: hidden;
+    background-color: #eee;
+    border-radius: 5px;
+    top: -20px;
+    float: left;
+    z-index: 2;
+    transition: all 0.5s;
+    box-shadow: 1px 1px 20px -5px rgb(0 0 0 / 50%);
+}
+.image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.students{
+    position: relative;
+    width: 100%;
+    height: 440px;
+}
+.sub-students{
+  display: inline;
+  float: left;
+  width: 60px;
+  height: 60px;
+  background-color: yellow;
+  border-radius: 50%;
+  margin: 16px;
+  opacity: 0;
+  transition: all 0.5s;
+  transition-delay: 0.7s;
+}
+
+.colleges{
+    position: relative;
+    display: inline;
+    float: right;
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 16px;
+    opacity: 0;
+    transition: all 0.5s;
+    transition-delay: 0.7s;
+}
+.text{
+  background-color: white;
+    position: absolute;
+    width: 0px;
+    top: 0px;
+    left: 290px;
+    margin-left: 10px;
+    height: 400px;
+    float: left;
+    border-radius: 5px;
+    z-index: 3;
+    transition: all 0.5s;
+    transition-delay: 0.7s;
+}
+.hidden_text {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+.tab{
+    position: relative;
+    float: left;
+    width: 410px;
+    height: 60px;
+    border-bottom: 3px solid #EDEDEC;
+}
+.tab > .first {
+  width: 300px;
+  background-color: #eee;
+}
+
+.tab > .first > li {
+  position: relative;
+  float: left;
+  width: 50%;
+list-style: none;
+}
+.tab > .first > li > a {
+border-top: 7px solid #ED346C;
+  position: relative;
+  display: block;
+  float: left;
+padding-top: 15px;
+  color: #241C3E;
+  text-decoration: none;
+  margin-left: 15px;
+font-size: 14px;
+}
+
+.tab > .first > li:first-child > a
+{
+  border-top: 0px;
+  margin-top: 8px;
+  color: #9A96A4;
+-webkit-transition: all 0.5s;
+-o-transition: all 0.5s;
+transition: all 0.5s;
+transition: all 0.2s;
+}
+
+.tab > .first > li:first-child > a:hover {
+  border-top: 7px solid #ED346C;
+padding-top: 15px;
+  color: #241C3E;
+ margin-top: 0px;
+}
+.title{
+   position: relative;
+  float: left;
+margin:10px 0px ;
+width: 410px;
+}
+.title > p {
+  font-weight: 700;
+  font-size: 14px;
+  margin-left: 40px;
+  text-align: left;
+  color: #36354E;
+}
+.info {
+  position: relative;
+  float: left;
+}
+.info > p {
+  margin: 5px 0px;
+  margin-left: 50px;
+border-left: 2px solid #E3E3E3;
+font-size: 12px;
+  padding: 20px 0px;
+padding-left: 20px;
+text-align: left;
+padding-right: 15px;
+color: #565656;
+}
+.down_button {
+  position: absolute;
+  bottom:0px;
+  left: 50%;
+}
+.down_button > a {
+  color: #36354E;
+}
+
+
+.maincontent {
+  position: relative;
+  width: 410px;
+}
+.button {
+  display: block;
+  position: absolute;
+  right: -15px;
+  top:50%;
+}
+.button  > a {
+  display: block;
+  padding-top: -5px;
+  width: 30px;
+  height: 30px;
+  background-color: #ED2460;
+  border-radius:50% ;
+  color: #fff;
+  box-shadow: 0px 0px 20px -2px rgba(237, 36, 96, 1);
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  transition: all 0.5s;
+  transform: rotate(180deg);
+
+}
+
+
+.button > a > i {
+  margin-top: 4px;
+}
+.modal_active > .text  > .button > a {
+  transform: rotate(0deg);
+}
+.modal_active > .text{
+  width: 410px;
+  left: 285px;
+  z-index: 1;
+  box-shadow: 15px 20px  70px  -5px  rgba(0,0,0,0.2);
+}
+.modal_active {
+width: 700px;
+}
+
+.modal_active > .photo {
+box-shadow: 25px 10px 70px -5px rgba(0,0,0,0.3);
+}
+
+.modal_active > .photo > .students > .sub-students > .colleges {
+  opacity: 1;
+}
+a:-webkit-any-link{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/********** end of web animation hope it goes well **********/
+.sec {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #262626;
+}
+
+
+.sec li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.sec li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 63px;
+  background: #333;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #666;
+  transition: .5s;
+}
+
+.sec li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ffee10;
+  transition: .5s;
+  transform: scale(.9);
+  z-index: -1;
+}
+
+.sec li a:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+}
+
+.sec li a:hover {
+  color: #ffee10;
+  box-shadow: 0 0 5px #ffee10;
+  text-shadow: 0 0 5px #ffee10;
+}
